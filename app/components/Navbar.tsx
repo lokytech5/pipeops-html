@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 
@@ -23,7 +24,7 @@ const Navbar = () => {
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img alt="Avatar" src={avatar} />
+                <Image alt="Avatar" src={avatar} width={200} height={200} />
               </div>
             </label>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-base-300 rounded-box w-52 absolute right-0">
