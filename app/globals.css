@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +26,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: var(--font-open-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat);
 }

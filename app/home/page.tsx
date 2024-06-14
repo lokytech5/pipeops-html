@@ -46,7 +46,7 @@ const HomePage = () => {
                 <p className="py-6 text-lg text-gray-600">
                   Welcome to DentalCare! Discover personalized dental health solutions tailored just for you. Our AI-driven analysis and expert recommendations ensure your best smile.
                 </p>
-                <div className="space-x-4">
+                <div className="space-x-5 p-4">
                   <Link href="/appointments">
                     <button className="btn btn-primary">Book Appointment</button>
                   </Link>
@@ -161,7 +161,7 @@ const HomePage = () => {
             <li className="w-full items-center">
               <Link href="/">
                 <div className="w-full py-2">
-                  Home
+                  About
                 </div>
               </Link>
             </li>

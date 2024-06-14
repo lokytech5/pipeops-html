@@ -20,6 +20,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li><a className="cursor-pointer">Home</a></li>
+            <li><a className="cursor-pointer">About</a></li>
           </ul>
         </div>
         <div className="navbar-end">
