@@ -26,7 +26,7 @@ const HomePage = () => {
     {
       title: "Diagonsis with AI",
       description: "use our AI to run diagonsis on your teeth",
-      icon: "/images/orthodontics-icon.png",
+      icon: teeth2,
       link: "/services/orthodontics"
     },
   ];

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import ThemeToggle from './ThemeToggle'
 
 
 const Navbar = () => {
@@ -23,11 +24,13 @@ const Navbar = () => {
             <li><a className="cursor-pointer">About</a></li>
           </ul>
         </div>
-        <div className="navbar-end">
+
+        <div className="navbar-end flex items-center space-x-2 sm:space-x-4">
+        <ThemeToggle/>
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <Image alt="Avatar" src={avatar} width={200} height={200} className="bg-white" />
+                <Image alt="Avatar" src={avatar} width={50} height={50} className="bg-white" />
               </div>
             </label>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-base-300 rounded-box w-52 absolute right-0">
