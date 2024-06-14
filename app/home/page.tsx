@@ -5,6 +5,34 @@ import Image from 'next/image'
 
 const HomePage = () => {
   const teeth1 = '/images/dentist3.jpg'
+  const teeth2 = '/images/teeth.jpeg'
+
+  const services = [
+    {
+      title: "Teeth Whitening",
+      description: "Get a brighter, whiter smile with our professional teeth whitening services.",
+      icon: teeth2,
+      link: "/services/whitening"
+    },
+    {
+      title: "Dental Implants",
+      description: "Restore your smile with our high-quality dental implants.",
+      icon: teeth2,
+      link: "/services/implants"
+    },
+    {
+      title: "Orthodontics",
+      description: "Straighten your teeth with our advanced orthodontic treatments.",
+      icon: "/images/orthodontics-icon.png",
+      link: "/services/orthodontics"
+    },
+    {
+      title: "Emergency Care",
+      description: "Receive immediate care for dental emergencies with our expert team.",
+      icon: "/images/emergency-icon.png",
+      link: "/services/emergency"
+    },
+  ];
   return (
     <main>
     <div className="drawer drawer-end">
@@ -15,7 +43,7 @@ const HomePage = () => {
         {/* Hero section */}
         <div className="hero min-h-screen bg-base-100 pt-20">
             <div className="hero-content flex-col lg:flex-row-reverse">
-              <Image src={teeth1} alt="Healthy Teeth" width={500} height={500} className="rounded-lg shadow-2xl" />
+              <Image src={teeth1} alt="Healthy Teeth" width={500} height={600} className="rounded-lg shadow-2xl" />
               <div>
                 <h1 className="text-6xl font-bold text-primary">Your Smile, Our Priority</h1>
                 <p className="py-6 text-lg text-gray-600">
@@ -33,6 +61,34 @@ const HomePage = () => {
             </div>
           </div>
           {/* End of Hero section */}
+
+          {/* Service section */}
+
+          <section className="py-12 bg-base-100">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold text-center text-primary mb-8">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {services.map((service, index) => (
+            <div key={index} className="card bg-base-200 shadow-xl hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+              <figure className="px-10 pt-10">
+                <Image src={service.icon} alt={service.title} width={80} height={80} className="rounded-xl" />
+              </figure>
+              <div className="card-body items-center text-center">
+                <h3 className="card-title text-xl font-semibold">{service.title}</h3>
+                <p className="text-gray-600">{service.description}</p>
+                <div className="card-actions mt-4">
+                  <Link href={service.link}>
+                    <button className="btn btn-primary">Learn More</button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+          {/* End of Service section */}
       </div>
       <div className="drawer-side z-50">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
