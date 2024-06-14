@@ -14,7 +14,7 @@ const HomePage = () => {
       </div>
       <div className="drawer-side z-50">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content space-y-5 no-underline rounded-box items-center">
+        <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content space-y-5 no-underline rounded-box">
 
           {/* Sidebar content here */}
           <div className="mt-10"></div>
@@ -31,13 +31,20 @@ const HomePage = () => {
               </div>
             </div>
 
+            <li className="items-center">
+           
+
          <li>
-          <Link href={"/"} className="cursor-pointer text-center justify-between w-full">
-          <div className="flex items-center">
+          <Link href={"/"} className="cursor-pointer text-center">
+          <div className="">
             Home
           </div>
           </Link>
             </li>
+
+              
+            </li>
+
         </ul>
       </div>
     </div>
