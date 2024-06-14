@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 
 const HomePage = () => {
+  const avatar = '/images/avatar.svg'
   return (
     <main>
         <div className="drawer drawer-end">
