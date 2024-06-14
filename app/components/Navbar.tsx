@@ -12,7 +12,7 @@ const Navbar = () => {
           </svg>
         </label>
         <div className="navbar-start">
-          <a className="btn btn-ghost text-xl">Lokosman</a>
+          <a className="btn btn-ghost text-xl">DentalCare</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
