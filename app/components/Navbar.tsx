@@ -4,6 +4,7 @@ import React from 'react'
 
 const Navbar = () => {
     const avatar = '/images/avatar.svg'
+    const logo = '/images/app-logo.jpg'
   return (
     <div className="fixed top-0 left-0 right-0 z-50 p-4">
       <div className="navbar bg-base-200 rounded-lg shadow-lg mx-auto">
@@ -13,6 +14,7 @@ const Navbar = () => {
           </svg>
         </label>
         <div className="navbar-start">
+          <Image src={logo} alt="app-logo" width={20} height={20} className="rounded-lg" />  
           <a className="btn btn-ghost text-xl">DentalCare</a>
         </div>
         <div className="navbar-center hidden lg:flex">
