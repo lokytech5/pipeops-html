@@ -1,15 +1,32 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const HomePage = () => {
-
+  const teeth1 = '/images/teeth2.jpeg'
   return (
     <main>
     <div className="drawer drawer-end">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         <Navbar />
+
+        {/* Hero section */}
+        <div className="hero min-h-screen bg-gradient-to-r from-blue-50 to-blue-100">
+            <div className="hero-content flex-col lg:flex-row-reverse">
+              <Image alt="dental image" src={teeth1} height={500} width={500} className="rounded-lg shadow-2xl" />
+              <div className="lg:pr-10">
+                <h1 className="text-5xl font-bold text-blue-900">We care about your smile</h1>
+                <p className="py-6 text-lg text-gray-600">With more than 500,000 happy patients, we can guarantee your smile. Your journey to a brighter smile starts here.</p>
+                <div className="flex space-x-4">
+                  <button className="btn btn-primary bg-blue-600 border-none">Book an appointment</button>
+                  <button className="btn btn-outline btn-primary">Meet our doctors</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* End of Hero section */}
       </div>
       <div className="drawer-side z-50">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
@@ -34,7 +51,7 @@ const HomePage = () => {
                 </div>
               </Link>
             </li>
-            
+
             <li className="w-full items-center">
               <Link href="/">
                 <div className="w-full py-2">
