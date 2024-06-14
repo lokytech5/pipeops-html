@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const HomePage = () => {
-  const teeth1 = '/images/teeth2.jpeg'
+  const teeth1 = '/images/dentist3.jpg'
   return (
     <main>
     <div className="drawer drawer-end">
@@ -13,15 +13,21 @@ const HomePage = () => {
         <Navbar />
 
         {/* Hero section */}
-        <div className="hero min-h-screen bg-gradient-to-r from-blue-50 to-blue-100">
+        <div className="hero min-h-screen bg-base-100 pt-20">
             <div className="hero-content flex-col lg:flex-row-reverse">
-              <Image alt="dental image" src={teeth1} height={500} width={500} className="rounded-lg shadow-2xl" />
-              <div className="lg:pr-10">
-                <h1 className="text-5xl font-bold text-blue-900">We care about your smile</h1>
-                <p className="py-6 text-lg text-gray-600">With more than 500,000 happy patients, we can guarantee your smile. Your journey to a brighter smile starts here.</p>
-                <div className="flex space-x-4">
-                  <button className="btn btn-primary bg-blue-600 border-none">Book an appointment</button>
-                  <button className="btn btn-outline btn-primary">Meet our doctors</button>
+              <Image src={teeth1} alt="Healthy Teeth" width={500} height={500} className="rounded-lg shadow-2xl" />
+              <div>
+                <h1 className="text-6xl font-bold text-primary">Your Smile, Our Priority</h1>
+                <p className="py-6 text-lg text-gray-600">
+                  Welcome to DentalCare! Discover personalized dental health solutions tailored just for you. Our AI-driven analysis and expert recommendations ensure your best smile.
+                </p>
+                <div className="space-x-4">
+                  <Link href="/appointments">
+                    <button className="btn btn-primary">Book Appointment</button>
+                  </Link>
+                  <Link href="/services">
+                    <button className="btn btn-outline btn-primary">Our Services</button>
+                  </Link>
                 </div>
               </div>
             </div>
