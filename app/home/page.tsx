@@ -5,6 +5,7 @@ import Image from 'next/image'
 import ServicesSection from './ServicesSection'
 import Footer from '../components/Footer'
 import BeforeAfterSection from './BeforeAfterSection'
+import HeroSection from './HeroSection'
 
 const HomePage = () => {
   const logo = '/images/app-logo.jpg'
@@ -20,26 +21,8 @@ const HomePage = () => {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         <Navbar />
-        
-        <div className="hero min-h-screen bg-base-100 pt-20">
-            <div className="hero-content flex-col lg:flex-row-reverse">
-              <Image src={teeth1} alt="Healthy Teeth" width={500} height={600} className="rounded-lg shadow-2xl" />
-              <div>
-                <h1 className="text-6xl font-bold text-primary">Your Smile, Our Priority</h1>
-                <p className="py-6 text-lg text-gray-600">
-                  Welcome to DentalCare! Discover personalized dental health solutions tailored just for you. Our AI-driven analysis and expert recommendations ensure your best smile.
-                </p>
-                <div className="space-x-5 p-4">
-                  <Link href="/appointments">
-                    <button className="btn btn-primary">Book Appointment</button>
-                  </Link>
-                  <Link href="/services">
-                    <button className="btn btn-outline btn-primary">Our Services</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+
+        <HeroSection/>
 
           <BeforeAfterSection/>
 
