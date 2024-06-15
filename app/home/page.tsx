@@ -10,26 +10,7 @@ const HomePage = () => {
   const teeth3 = '/images/image1.webp'
   const beforeAfterImage = '/images/before.png'
 
-  const services = [
-    {
-      title: "Teeth Whitening",
-      description: "Get a brighter, whiter smile with our professional teeth whitening services.",
-      icon: teeth2,
-      link: "/services/whitening"
-    },
-    {
-      title: "Dental Implants",
-      description: "Restore your smile with our high-quality dental implants.",
-      icon: teeth2,
-      link: "/services/implants"
-    },
-    {
-      title: "Diagonsis with AI",
-      description: "use our AI to run diagonsis on your teeth",
-      icon: teeth2,
-      link: "/services/orthodontics"
-    },
-  ];
+  
   return (
     <main>
     <div className="drawer drawer-end">
