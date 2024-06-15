@@ -1,20 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Link from 'next/link'
-import Image from 'next/image'
 import ServicesSection from './ServicesSection'
 import Footer from '../components/Footer'
 import BeforeAfterSection from './BeforeAfterSection'
 import HeroSection from './HeroSection'
 
 const HomePage = () => {
-  const logo = '/images/app-logo.jpg'
-  const teeth1 = '/images/dentist3.jpg'
-  const teeth2 = '/images/teeth.jpeg'
-  const teeth3 = '/images/image1.webp'
-  const beforeAfterImage = '/images/before.png'
 
-  
   return (
     <main>
     <div className="drawer drawer-end">
