@@ -21,8 +21,14 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li><a className="cursor-pointer">Home</a></li>
-            <li><a className="cursor-pointer">About</a></li>
+            <li>
+              <Link href={"/"} className="cursor-pointer">Home</Link>
+              
+              </li>
+            <li>
+              <Link href={"/about"} className="cursor-pointer">About</Link>
+              
+              </li>
           </ul>
         </div>
 
