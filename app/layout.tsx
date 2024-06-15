@@ -1,9 +1,11 @@
 import './globals.css'
+import 'react-toastify/dist/ReactToastify.css';
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Open_Sans } from 'next/font/google'
 import { Montserrat } from 'next/font/google'
 import Providers from './provider'
+import { ToastContainer } from 'react-toastify';
 
 const inter = Inter({ subsets: ['latin'] })
 const openSans = Open_Sans({ subsets: ['latin'], variable: '--font-open-sans' })
@@ -25,6 +27,7 @@ export default function RootLayout({
     <body className="font-open-sans">
       <Providers>
       {children}
+      <ToastContainer />
       </Providers>
     </body>
   </html>
