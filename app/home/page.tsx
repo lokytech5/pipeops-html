@@ -20,8 +20,7 @@ const HomePage = () => {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         <Navbar />
-
-        {/* Hero section */}
+        
         <div className="hero min-h-screen bg-base-100 pt-20">
             <div className="hero-content flex-col lg:flex-row-reverse">
               <Image src={teeth1} alt="Healthy Teeth" width={500} height={600} className="rounded-lg shadow-2xl" />
@@ -41,7 +40,6 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          {/* End of Hero section */}
 
           <BeforeAfterSection/>
 
