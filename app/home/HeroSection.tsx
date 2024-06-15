@@ -2,9 +2,11 @@ import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 
+// testing3
+
 const HeroSection = () => {
      const teeth1 = '/images/dentist3.jpg'
-     
+
   return (
     <div className="hero min-h-screen bg-base-100 pt-20">
     <div className="hero-content flex-col lg:flex-row-reverse">

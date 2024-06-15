@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image';
 
+// testing2
+
 const BeforeAfterSection = () => {
     const beforeAfterImage = '/images/before.png'
 
