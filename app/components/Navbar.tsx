@@ -25,17 +25,20 @@ const Navbar = () => {
               <Link href={"/"} className="cursor-pointer">Home</Link>
               
               </li>
+
             <li>
-              <Link href={"/about"} className="cursor-pointer">Register</Link>
+              <Link href={"/register"} className="cursor-pointer">Register</Link>
               
               </li>
+
             <li>
-              <Link href={"/about"} className="cursor-pointer">Login</Link>
+              <Link href={"/login"} className="cursor-pointer">Login</Link>
               
+              </li>
+
             <li>
               <Link href={"/about"} className="cursor-pointer">About</Link>
               
-              </li>
               </li>
           </ul>
         </div>

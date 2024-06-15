@@ -28,6 +28,16 @@ const NavDrawer = () => {
         </li>
 
         <li className="w-full items-center">
+          <Link href="/register">
+            <div className="w-full py-2">
+              Register
+            </div>
+          </Link>
+        </li>
+
+
+
+        <li className="w-full items-center">
           <Link href="/about">
             <div className="w-full py-2">
               About
