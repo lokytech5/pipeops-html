@@ -1,11 +1,15 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import LayoutContainer from '../components/LayoutContainer'
 
 const AboutPage = () => {
    const profileImage = '/images/dentist3.jpg'
   return (
-    <main className="min-h-screen bg-base-100 py-10">
+    <LayoutContainer>
+
+
+    <main className="min-h-screen bg-base-100 py-10 pt-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-primary">About Me</h1>
@@ -39,6 +43,7 @@ const AboutPage = () => {
         </div>
       </div>
     </main>
+    </LayoutContainer>
   )
 }
 
