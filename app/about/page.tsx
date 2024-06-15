@@ -2,8 +2,6 @@ import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
 
-// testing
-
 const AboutPage = () => {
    const profileImage = '/images/dentist3.jpg'
   return (
