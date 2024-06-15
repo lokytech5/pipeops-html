@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import ThemeToggle from './ThemeToggle'
+import Link from 'next/link'
 
 
 const Navbar = () => {
@@ -35,10 +36,10 @@ const Navbar = () => {
             </label>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-base-300 rounded-box w-52 absolute right-0">
               <li>
-                <a className="justify-between">
+                <Link href={"/profile"} className="justify-between">
                   Profile
                   <span className="badge">New</span>
-                </a>
+                </Link>
               </li>
               
               <li><a>Logout</a></li>
