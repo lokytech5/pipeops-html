@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 
-// testin
+
 
 const HeroSection = () => {
      const teeth1 = '/images/dentist3.jpg'
