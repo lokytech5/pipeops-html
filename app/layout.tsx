@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Open_Sans } from 'next/font/google'
 import { Montserrat } from 'next/font/google'
+import Providers from './provider'
 
 const inter = Inter({ subsets: ['latin'] })
 const openSans = Open_Sans({ subsets: ['latin'], variable: '--font-open-sans' })
@@ -22,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${openSans.variable} ${montserrat.variable}`}>
     <body className="font-open-sans">
+      <Providers>
       {children}
+      </Providers>
     </body>
   </html>
   )
