@@ -4,12 +4,13 @@ import LayoutContainer from '../components/LayoutContainer'
 const RegisterPage = () => {
 
     const handleSubmit = () => {
+        console.log("RegisterPage");
         
     }
   return (
     <LayoutContainer>
 
-<div className="flex items-center justify-center min-h-screen bg-base-200">
+<div className="flex items-center justify-center min-h-screen bg-base-200 mt-25">
      
         <div className="card w-full max-w-xs md:max-w-md lg:max-w-lg bg-base-100 shadow-xl p-5">
           {/* Consistent Welcome Banner */}
@@ -21,7 +22,7 @@ const RegisterPage = () => {
           <div className="card bg-base-100 shadow-xl p-5">
             <div className="card-body">
               <h2 className="card-title justify-center text-center text-3xl font-bold mb-4">Create Your Account</h2>
-              <form onSubmit={handleSubmit}>
+              <form>
                 <div className="form-control mb-4">
                   <label className="input input-bordered flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70">
