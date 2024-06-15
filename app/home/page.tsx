@@ -63,7 +63,6 @@ const HomePage = () => {
         </div>
       </div>
     </section>
-          {/* End of After Section */}
 
          <ServicesSection/>
 
