@@ -19,7 +19,7 @@ const BeforeAfterSection = () => {
         </div>
         <div className="flex-1 w-full mt-8 lg:mt-0 flex justify-center">
           <div className="relative w-full h-64 lg:h-96">
-            <Image src={beforeAfterImage} alt="Before and After Teeth Whitening" layout="fill" objectFit="contain" className="rounded-lg shadow-xl" />
+            <Image src={beforeAfterImage} alt="Before and After Teeth Whitening" layout="fill"  className="rounded-lg shadow-xl" />
           </div>
         </div>
       </div>
